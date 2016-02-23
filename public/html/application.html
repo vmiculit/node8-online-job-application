@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="JobApp">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/angular.min.js"></script>
+    <base href="/">
+  </head>
+  <body ng-controller="applicationController">
+	  
+    <div class="container">
+
+    <h1>{{application.name}}</h1>
+    <p><strong>Years of Experience: </strong>{{application.experience}}</p>
+    <p><strong>Skills: </strong>{{application.skills}}</p>
+    <p><strong>Bio: </strong>{{application.bio}}</p>
+    <p><strong>Reason: </strong>{{application.reason}}</p>
+
+    </div>
+	  
+	  
+	<script src="/javascripts/main.js"></script>
+  </body>
+</html>

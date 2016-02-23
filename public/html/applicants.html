@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="JobApp">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/angular.min.js"></script>
+    <base href="/">
+  </head>
+  <body ng-controller="applicantController">
+	  
+    <div class="container">
+      <h1>Applicants</h1>
+      <ul id="applications" class="list-unstyled" ng-repeat="application in applications">
+        <li><a class="btn btn-default" ng-click="removeApplication(application)">X</a> <a href="/application/{{application._id}}">{{application.name}}</a></li>
+      </ul>
+    </div>
+	  
+	<script src="/javascripts/main.js"></script>
+
+  </body>
+</html>
